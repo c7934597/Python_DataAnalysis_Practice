@@ -62,7 +62,7 @@ class newBingCrawler:
                         ## get purer text in every html file
                         if 'html' in str(response.content_type).lower():
                             html = await response.text()
-                            soup = BeautifulSoup(html, 'lxml')
+                            soup = BeautifulSoup(html, 'html.parser')
                             [x.extract() for x in soup.findAll('script')]
                             [x.extract() for x in soup.findAll('style')]
                             [x.extract() for x in soup.findAll('nav')]
@@ -85,7 +85,7 @@ class newBingCrawler:
             elem.submit()
             html = driver.page_source
             driver.close()
-            soup = BeautifulSoup(html, 'lxml')
+            soup = BeautifulSoup(html, 'html.parser')
             Links = soup.find_all('a')
             # Find links in first page in Bing Search Engine
             Goodlinks = []

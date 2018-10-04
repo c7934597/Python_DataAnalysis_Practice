@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65685b68-cfd8-47fa-bbf5-932f218da99f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python_MultiAsyncCrawler.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Python_iThome_Crawler.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Python_Asynchronous.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python_Async.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python_MultiAsyncCrawler.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python_MultiAsyncCrawler.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,18 +16,19 @@
     <session id="67517929">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="6" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.2" value="1" />
-          <entry key="project.open.time.7" value="1" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.open.time.7" value="2" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="log" value="2" />
-          <entry key="py" value="20" />
+          <entry key="py" value="34" />
           <entry key="tomita_co_ltd" value="1" />
           <entry key="txt" value="4" />
         </counts>
@@ -37,35 +36,25 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="PLAIN_TEXT" value="7" />
-          <entry key="Python" value="20" />
+          <entry key="Python" value="34" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="3" />
-          <entry key="py" value="214" />
+          <entry key="dummy" value="13" />
+          <entry key="py" value="431" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="3" />
-          <entry key="Python" value="214" />
+          <entry key="PLAIN_TEXT" value="13" />
+          <entry key="Python" value="431" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Python_MultiAsyncCrawler.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="5" column="29" lean-forward="true" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="450" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -79,6 +68,12 @@
       <find>$409,833</find>
       <find>selenium</find>
       <find>webdriver</find>
+      <find>lxml</find>
+      <find>content_length</find>
+      <find>corpus_day</find>
+      <find>corpus_title</find>
+      <find>browse_count</find>
+      <find>avg_article_length</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -99,7 +94,10 @@
         <option value="$PROJECT_DIR$/Python_Async_Multithreading.py" />
         <option value="$PROJECT_DIR$/venv/Lib/abc.py" />
         <option value="$PROJECT_DIR$/venv/Lib/io.py" />
+        <option value="$PROJECT_DIR$/Python_iThome.py" />
         <option value="$PROJECT_DIR$/Python_MultiAsyncCrawler.py" />
+        <option value="$PROJECT_DIR$/Python_iThome_Crawler.py" />
+        <option value="$PROJECT_DIR$/Python_Pandas_DataFrame.py" />
       </list>
     </option>
   </component>
@@ -115,7 +113,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -127,6 +124,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -152,7 +150,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Python_MultiAsyncCrawler">
+  <component name="RunManager" selected="Python.Python_iThome_Crawler">
     <configuration name="Python_Asynchronous" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Python_DataAnalysis_Practice" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -237,7 +235,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Request_FakeHeader" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Python_iThome_Crawler" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Python_DataAnalysis_Practice" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -249,7 +247,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Request_FakeHeader.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python_iThome_Crawler.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -259,19 +257,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.Request_FakeHeader" />
       <item itemvalue="Python.Python_Selenium" />
       <item itemvalue="Python.Python_Asynchronous" />
       <item itemvalue="Python.Python_BeautifulSoup" />
       <item itemvalue="Python.Python_MultiAsyncCrawler" />
+      <item itemvalue="Python.Python_iThome_Crawler" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Python_iThome_Crawler" />
         <item itemvalue="Python.Python_MultiAsyncCrawler" />
         <item itemvalue="Python.Python_Asynchronous" />
         <item itemvalue="Python.Python_BeautifulSoup" />
         <item itemvalue="Python.Python_Selenium" />
-        <item itemvalue="Python.Request_FakeHeader" />
       </list>
     </recent_temporary>
   </component>
@@ -306,7 +304,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32977462" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32977462" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39976275" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32977462" />
@@ -321,6 +319,14 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="articles_rows" />
+        <watch expression="soup" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Request_IO.py" />
@@ -360,20 +366,10 @@
       </provider>
     </entry>
     <entry file="file://D:/02445_Profile/Desktop/MultiAsyncCrawler-master/MultiAsync.py" />
-    <entry file="file://$PROJECT_DIR$/Python_Async.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="4" column="23" lean-forward="true" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/venv/Lib/_collections_abc.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
           <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="e#215#254#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -388,27 +384,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="347">
           <caret line="47" column="26" selection-start-line="47" selection-start-column="26" selection-end-line="47" selection-end-column="26" />
-          <folding>
-            <element signature="e#2183#2193#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/comapnyEmbedding/tomita_co_ltd">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-156743" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ghostdriver.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FailLinks.log">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/comapnyEmbedding/tomita_co_ltd" />
+    <entry file="file://$PROJECT_DIR$/ghostdriver.log" />
+    <entry file="file://$PROJECT_DIR$/FailLinks.log" />
     <entry file="file://$PROJECT_DIR$/Python_Selenium.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -425,8 +406,67 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Python_MultiAsyncCrawler.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="87" column="53" lean-forward="true" selection-start-line="87" selection-start-column="53" selection-end-line="87" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Anaconda3/Lib/site-packages/pandas/core/indexes/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="3077" selection-start-line="3077" selection-end-line="3077" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Anaconda3/Lib/site-packages/pandas/core/frame.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="2681" selection-start-line="2681" selection-end-line="2681" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Anaconda3/Lib/site-packages/requests/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="869" selection-start-line="869" selection-end-line="869" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Anaconda3/Lib/codecs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="323" selection-start-line="323" selection-end-line="323" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Anaconda3/Lib/site-packages/bs4/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1813">
+          <caret line="200" column="37" selection-start-line="200" selection-start-column="37" selection-end-line="200" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python_iThome_Crawler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6">
+          <caret line="152" column="9" lean-forward="true" selection-start-line="152" selection-start-column="9" selection-end-line="152" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python_Async.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
-          <caret line="5" column="29" lean-forward="true" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python_Pandas_DataFrame.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
