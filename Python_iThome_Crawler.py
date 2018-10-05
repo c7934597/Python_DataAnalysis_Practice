@@ -4,14 +4,17 @@ import re
 import pandas as pd
 from datetime import datetime
 import matplotlib.pyplot as plt
+import jieba
+from wordcloud import WordCloud
+from collections import Counter
+import os
 
 # 1
 # 首先我們先到iThome鐵人的首頁，把第一頁到最後一頁的網址抄下來
 url = "https://ithelp.ithome.com.tw/ironman?page=1#ir-list"
 res = requests.get(url)  ## 先爬下第一頁
-soup = BeautifulSoup(res.text, 'html.parser')
+soup = BeautifulSoup(res.text, 'lxml')
 maxpage = int(soup.select('.pagination')[0].find_all('a')[-2].text)  ## 定位出最後一頁的頁數
-
 urls = []
 for i in range(maxpage):  ## 把接下來要爬的網頁準備好
     page = i + 1
@@ -22,7 +25,7 @@ for i in range(maxpage):  ## 把接下來要爬的網頁準備好
 articles_rows = []
 for idx, url in enumerate(urls):  ## enumerate這個東西很好用，請大家多多利用
     res = requests.get(url)
-    soup = BeautifulSoup(res.text, 'html.parser')
+    soup = BeautifulSoup(res.text, 'lxml')
 
     articles = soup.select('.ir-list')  ## 找出該頁面的所有文章
 
@@ -37,6 +40,7 @@ for idx, url in enumerate(urls):  ## enumerate這個東西很好用，請大家�
     if idx % 10 == 0:  ## 讓你大概知道進度到哪了
         print(idx)
 
+
 # 2
 df = pd.DataFrame(articles_rows)
 #df  ## 查看DataFrame的樣子
@@ -46,7 +50,7 @@ df = pd.DataFrame(articles_rows)
 def ArticleContentCrawler(row):
     url = row['article_url']
     res = requests.get(url)
-    soup = BeautifulSoup(res.text, 'html.parser')
+    soup = BeautifulSoup(res.text, 'lxml')
 
     ## linke count
     like_count = int(soup.select('.likeGroup__num')[0].text)  ## 定位讚的次數
@@ -126,12 +130,12 @@ cursor = collection.insert_many(list(df.T.to_dict().values()))  # 這是DataFram
 '''
 
 # 6
+
 '''
 #6-1 來看看大家哪一天發文的長度比較長
 content_length_each_day = df.groupby('corpus_day').mean()['content_length']
 content_length_each_day.plot(kind='bar')
 plt.show()
-
 
 #6-2 各組的發文長度
 content_length_each_group = df.groupby('group').mean()['content_length']
@@ -163,3 +167,102 @@ df_sorted = df_sorted[['avg_like_count', 'avg_browse_count', 'article_count', 'a
 # df_sorted.to_csv('sorted.csv')
 df_sorted
 '''
+
+#8.
+#各組別文字分析(全文)
+
+with open('stops.txt', 'r', encoding='utf8') as f:
+    stops = f.read().split('\n')
+from string import punctuation
+stops.extend(punctuation)
+stops.extend(['\n', ' ', '使用', '一個'])
+
+def tokenize(sentence):
+    terms = []
+    if pd.notnull(sentence):
+        for term in jieba.cut(sentence):
+            term = term.lower()
+            if term not in stops:
+                terms.append(term)
+    return terms
+
+
+for g in set(df['group']):
+    print(g)
+    df_content = df[df['group'] == g][['text_content']]
+    df_content['processed'] = df_content['text_content'].apply(tokenize)
+    total_terms = []
+    for terms in df_content['processed']:
+        total_terms.extend(terms)
+
+    wordcloud = WordCloud(font_path="simsun.ttf", background_color='white')
+    wordcloud.generate_from_frequencies(frequencies=Counter(total_terms))
+    plt.figure(figsize=(10, 10))
+    plt.imshow(wordcloud, interpolation="bilinear")
+    plt.axis("off")
+    plt.savefig(os.path.join('day19_pic', 'worldcloud_' + g + '_chinese'), bbox_inches='tight', pad_inches=0)
+    plt.show()
+
+#9
+#各組別文字分析(英文)
+for g in set(df['group']):
+    print(g)
+    df_content = df[df['group'] == g][['text_content']]
+    df_content['processed'] = df_content['text_content'].apply(tokenize)
+    english_terms = []
+    for terms in df_content['processed']:
+        for term in terms:
+            match_eng = re.match(r'[a-z]+', term)
+            if match_eng != None and match_eng.group(0) == term:
+                english_terms.append(term)
+
+    wordcloud = WordCloud(font_path="simsun.ttf", background_color='white')
+    wordcloud.generate_from_frequencies(frequencies=Counter(english_terms))
+    plt.figure(figsize=(10, 10))
+    plt.imshow(wordcloud, interpolation="bilinear")
+    plt.axis("off")
+    plt.savefig(os.path.join('day19_pic', 'worldcloud_' + g + '_English'), bbox_inches='tight', pad_inches=0)
+    plt.show()
+
+#10
+#各組別程式語言出現比例 整理出各組程式語言出現的次數
+group_lang_count = {}
+for g in set(df['group']):
+    print(g)
+    df_content = df[df['group'] == g][['text_content']]
+    df_content['processed'] = df_content['text_content'].apply(tokenize)
+    total_terms = []
+    for terms in df_content['processed']:
+        for term in terms:
+            match_eng = re.match(r'[a-z]+', term)
+            if match_eng != None and match_eng.group(0) == term:
+                total_terms.append(term)
+
+    langs = ["nodejs", "node", "reactjs", "react", "js",
+             "python", "javascript", "ruby", 'java', 'c',
+             'c#', 'angularjs', 'angular', 'typescript',
+             'd3', 'd3js', 'sql', 'html', 'css', 'jquery',
+             'go', 'vue', 'vuejs', 'r']
+
+    langs = sorted(langs)
+
+    lang_count = {}
+    for lang in langs:
+        count = 0
+        if lang in total_terms:
+            count = Counter(total_terms).get(lang)
+        lang_count[lang] = count
+
+    print(lang_count)
+    group_lang_count[g] = lang_count
+
+df_lang = pd.DataFrame(list(group_lang_count.values()), index=group_lang_count.keys())
+df_lang
+
+#11
+#畫圖
+for g in set(df['group']):
+    df_lang.T[g].plot(kind='pie', autopct='%.2f', title=g, fontsize=10, )
+    plt.title(g, fontsize=20)
+    plt.savefig(os.path.join('day19_pic', 'lang_pie_' + g), bbox_inches='tight', pad_inches=0)
+    plt.show()

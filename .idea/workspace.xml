@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65685b68-cfd8-47fa-bbf5-932f218da99f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Python_iThome_Crawler.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Python_LineBot_Dictionary.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Python_Preprocess.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Python_MultiAsyncCrawler.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python_MultiAsyncCrawler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python_iThome_Crawler.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python_iThome_Crawler.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,45 +17,61 @@
     <session id="67517929">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
+          <entry key="project.closed" value="8" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.2" value="1" />
-          <entry key="project.open.time.6" value="1" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.6" value="2" />
           <entry key="project.open.time.7" value="2" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="ipynb" value="1" />
           <entry key="log" value="2" />
-          <entry key="py" value="34" />
+          <entry key="py" value="36" />
           <entry key="tomita_co_ltd" value="1" />
           <entry key="txt" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+          <entry key="IPNB" value="1" />
           <entry key="PLAIN_TEXT" value="7" />
-          <entry key="Python" value="34" />
+          <entry key="Python" value="36" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="13" />
-          <entry key="py" value="431" />
+          <entry key="py" value="649" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="13" />
-          <entry key="Python" value="431" />
+          <entry key="Python" value="649" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="450" />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Python_Preprocess.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="434">
+              <caret line="151" selection-start-line="151" selection-end-line="151" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -96,8 +113,10 @@
         <option value="$PROJECT_DIR$/venv/Lib/io.py" />
         <option value="$PROJECT_DIR$/Python_iThome.py" />
         <option value="$PROJECT_DIR$/Python_MultiAsyncCrawler.py" />
-        <option value="$PROJECT_DIR$/Python_iThome_Crawler.py" />
         <option value="$PROJECT_DIR$/Python_Pandas_DataFrame.py" />
+        <option value="$PROJECT_DIR$/Python_iThome_Crawler.py" />
+        <option value="$PROJECT_DIR$/Python_LineBot_Dictionary.py" />
+        <option value="$PROJECT_DIR$/Python_Preprocess.py" />
       </list>
     </option>
   </component>
@@ -113,6 +132,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -124,7 +144,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -150,7 +169,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Python_iThome_Crawler">
+  <component name="RunManager" selected="Python.Python_Preprocess">
     <configuration name="Python_Asynchronous" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Python_DataAnalysis_Practice" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -214,7 +233,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Python_Selenium" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Python_Preprocess" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Python_DataAnalysis_Practice" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -226,7 +245,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python_Selenium.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python_Preprocess.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -257,19 +276,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.Python_Selenium" />
       <item itemvalue="Python.Python_Asynchronous" />
       <item itemvalue="Python.Python_BeautifulSoup" />
       <item itemvalue="Python.Python_MultiAsyncCrawler" />
       <item itemvalue="Python.Python_iThome_Crawler" />
+      <item itemvalue="Python.Python_Preprocess" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Python_Preprocess" />
         <item itemvalue="Python.Python_iThome_Crawler" />
         <item itemvalue="Python.Python_MultiAsyncCrawler" />
         <item itemvalue="Python.Python_Asynchronous" />
         <item itemvalue="Python.Python_BeautifulSoup" />
-        <item itemvalue="Python.Python_Selenium" />
       </list>
     </recent_temporary>
   </component>
@@ -297,8 +316,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1046" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24986738" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24986738" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -404,13 +424,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Python_MultiAsyncCrawler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="87" column="53" lean-forward="true" selection-start-line="87" selection-start-column="53" selection-end-line="87" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/Anaconda3/Lib/site-packages/pandas/core/indexes/base.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="177">
@@ -446,13 +459,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Python_iThome_Crawler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6">
-          <caret line="152" column="9" lean-forward="true" selection-start-line="152" selection-start-column="9" selection-end-line="152" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Python_Async.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
@@ -460,10 +466,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Python_Pandas_DataFrame.py">
+    <entry file="file://$PROJECT_DIR$/Python_Pandas_DataFrame.py" />
+    <entry file="file://$PROJECT_DIR$/Python_MultiAsyncCrawler.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+        <state relative-caret-position="3542">
+          <caret line="87" column="53" selection-start-line="87" selection-start-column="53" selection-end-line="87" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python_iThome_Crawler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="171" column="6" lean-forward="true" selection-start-line="171" selection-start-column="6" selection-end-line="171" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Natural_Language_Processing_Chinese.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python_LineBot_Dictionary.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="92" column="22" lean-forward="true" selection-start-line="92" selection-start-column="22" selection-end-line="92" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Anaconda3/Lib/site-packages/matplotlib/cbook/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="391" column="41" lean-forward="true" selection-start-line="391" selection-start-column="41" selection-end-line="391" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python_Preprocess.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="151" selection-start-line="151" selection-end-line="151" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
